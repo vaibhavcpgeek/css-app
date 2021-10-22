@@ -7,7 +7,7 @@ function FullDetails() {
   return (
     <StyledSection>
       <StyledText variant="medium">Full Details</StyledText>
-      <FontAwesomeIcon icon={faChevronDown} />
+      <FontAwesomeIcon icon={faChevronDown} className="chevron-down" />
     </StyledSection>
   );
 }
@@ -17,6 +17,9 @@ export default FullDetails;
 const StyledSection = styled.section`
   padding: 18px;
   text-align: right;
+  & .chevron-down {
+    font-size: 12px;
+  }
 `;
 
 const StyledText = styled(MediumText)`
