@@ -43,4 +43,5 @@ export const RegularLightText = styled(DefaultText)`
 const MediumLargeText = styled(DefaultText)`
   font-size: 20px;
   line-height: 22px;
+  font-weight: 600;
 `;

@@ -21,4 +21,6 @@ const StyledSection = styled.section`
 
 const StyledText = styled(MediumText)`
   margin-right: 5px;
+  text-decoration: underline;
+  cursor: pointer;
 `;
