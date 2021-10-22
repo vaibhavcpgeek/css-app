@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import "./App.css";
+import RequestTitle from "./components/RequestTitle";
+import RequestDetails from "./components/RequestDetails";
+import RequestActions from "./components/RequestActions";
+import FullDetails from "./components/FullDetails";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StyledSection>
+        <div>
+          <RequestTitle />
+          <RequestDetails />
+        </div>
+        <div>
+          <RequestActions />
+          <FullDetails />
+        </div>
+      </StyledSection>
     </div>
   );
 }
 
 export default App;
+
+const StyledSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+`;
