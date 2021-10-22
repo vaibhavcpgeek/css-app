@@ -1,7 +1,7 @@
 
 # Final output
 
-![alt text](https://github.com/vaibhavcpgeek/css-app/blob/master/image.png)
+![alt text](https://github.com/vaibhavcpgeek/css-app/blob/master/img.png)
 
 
 
