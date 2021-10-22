@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Text, { RegularLightText } from "../shared/Text";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 function RequestDetails() {
   return (
@@ -14,7 +16,13 @@ function RequestDetails() {
       </StyledDiv>
       <StyledDiv>
         <StyledText variant="regular-light">Request status</StyledText>
-        <Text variant="medium">Pending authorization</Text>
+        <Text variant="medium">
+          <FontAwesomeIcon
+            icon={faExclamationCircle}
+            className="warning-icon"
+          />
+          Pending authorization
+        </Text>
       </StyledDiv>
     </StyledSection>
   );
@@ -33,7 +41,16 @@ const StyledText = styled(RegularLightText)`
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  border-right: solid 2px #000;
+  border-right: solid 2px #252525;
   margin-right: 20px;
   padding-right: 20px;
+  &:last-child {
+    border: none;
+  }
+  & .warning-icon {
+    color: #f1b20b;
+    margin-right: 4px;
+    background-color: #000;
+    border-radius: 50%;
+  }
 `;

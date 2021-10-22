@@ -8,7 +8,7 @@ function RequestTitle() {
     <StyledSection>
       <StyledDiv>
         <FontAwesomeIcon icon={faFile} />
-        <Separator>|</Separator>
+        <Separator />
         <FontAwesomeIcon icon={faPrint} />
       </StyledDiv>
       <Button variant="tertiary">Reject</Button>
@@ -27,8 +27,13 @@ const StyledSection = styled.section`
 const StyledDiv = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 5px;
 `;
 
 const Separator = styled.span`
-  padding: 10px;
+  height: 60%;
+  display: block;
+  border: solid 1px #252525;
+  width: 0;
+  margin: 5px 15px;
 `;
